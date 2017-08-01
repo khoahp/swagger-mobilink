@@ -1,4 +1,4 @@
-# Swagger CXF Sample App
+# Swagger APIs for MobiLink
 
 ## Overview
 This is a java project to build a stand-alone server which implements the OpenAPI Spec.  You can find out 
@@ -13,17 +13,17 @@ by [rvullriede](https://github.com/rvullriede).  Thank you for your contribution
 To run the server, run this task:
 
 ```
-mvn package tomcat6:run
+mvn clean install
 ```
 
-This will start Tomcat 6 embedded on port 8002.
+This will build a war file, then copy this one to {tomcat_home}/webapps
 
-### Testing the server
-Once started, you can navigate to http://localhost:8002/api/swagger.json to view the Swagger Resource Listing.
+### Testing on runtime
+Once started, you can navigate to http://localhost:port/api/swagger.json to view the Swagger Resource Listing.
 This tells you that the server is up and ready to demonstrate Swagger.
 
 ### Using the UI
-There is an HTML5-based API tool bundled in this sample--you can view it it at [http://localhost:8002](http://localhost:8002). This lets you inspect the API using an interactive UI.  You can access the source of this code from [here](https://github.com/swagger-api/swagger-ui)
+There is an HTML5-based API tool bundled in this sample--you can view it it at [http://localhost:port] (http://localhost:8080). This lets you inspect the API using an interactive UI.  You can access the source of this code from [here](https://github.com/khoahp/swagger-mobilink)
 
 ### Applying an API key
 The sample app has an implementation of the Swagger ApiAuthorizationFilter.  This restricts access to resources
