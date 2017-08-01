@@ -2,7 +2,7 @@
 <xsd:schema xmlns:xsd="http://www.w3.org/2001/XMLSchema"
 	targetNamespace="http://benchresources.in/cdm/Player" xmlns:tns="http://benchresources.in/cdm/Player"
 	elementFormDefault="qualified">
-
+	
 	<!-- DictCollectionModel -->
 	<xsd:element name="DictCollectionShortModel">
 		<xsd:complexType>
